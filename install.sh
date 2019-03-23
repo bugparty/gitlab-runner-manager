@@ -1,8 +1,8 @@
 #!/bin/bash
 
-url_x86_64 = `https://gitlab-runner-downloads.s3.amazonaws.com/latest/binaries/gitlab-runner-linux-amd64`
-url_x86 = `https://gitlab-runner-downloads.s3.amazonaws.com/latest/binaries/gitlab-runner-linux-386`
-url_arm = `https://gitlab-runner-downloads.s3.amazonaws.com/latest/binaries/gitlab-runner-linux-arm`
+url_x86_64 = "https://gitlab-runner-downloads.s3.amazonaws.com/latest/binaries/gitlab-runner-linux-amd64"
+url_x86 = "https://gitlab-runner-downloads.s3.amazonaws.com/latest/binaries/gitlab-runner-linux-386"
+url_arm = "https://gitlab-runner-downloads.s3.amazonaws.com/latest/binaries/gitlab-runner-linux-arm"
 red='\e[91m'
 green='\e[92m'
 yellow='\e[93m'
@@ -14,7 +14,7 @@ none='\e[0m'
 [[ $(id -u) != 0 ]] && echo -e "\n Please run as  ${red}root ${none} ${yellow}~(^_^) ${none}\n" && exit 1
 
 archs=`uname -m`
-url=`https://gitlab-runner-downloads.s3.amazonaws.com/latest/binaries/gitlab-runner-linux-amd64'
+url="https://gitlab-runner-downloads.s3.amazonaws.com/latest/binaries/gitlab-runner-linux-amd64"
 case "$archs" in
     i?86) url=$url_x86 ;;
     x86_64) url=$url_x86_64 ;;
