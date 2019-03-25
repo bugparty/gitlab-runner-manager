@@ -18,7 +18,7 @@ case "$archs" in
     i?86) runner_url="$url_x86";;
     x86_64) runner_url="$url_x86_64" ;;
    arm) runner_url="$url_arm" ;;
-   aarch64) runner_url="$url_arm" ;;
+   aarch64) echo -e "$red armv8 is not supported $none" && exit 2 ;;
 esac
 echo "download gitlab-runner $runner_url"
 if ! wget -O /usr/local/bin/gitlab-runner "$runner_url"; then
