@@ -9,4 +9,8 @@ supported platforms
 ### notice
 armv8 is not supported by gitlab official
 
+### if you are root user
 bash <(curl -s -L https://git.io/fjJEO)
+
+### else
+sudo -E "bash <(curl -s -L https://git.io/fjJEO)"
