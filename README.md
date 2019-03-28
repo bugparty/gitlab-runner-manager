@@ -4,7 +4,7 @@ one click install script for gitlab-runner
 supported platforms
 * x86
 * x86_64
-* armv7
+* arm x32
 
 ### notice
 armv8 is not supported by gitlab official
