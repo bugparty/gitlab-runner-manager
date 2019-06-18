@@ -5,6 +5,7 @@ supported platforms
 * x86
 * x86_64
 * arm x32
+* arm64
 
 ### notice
 armv8 is not supported by gitlab official
