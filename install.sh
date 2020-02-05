@@ -28,6 +28,7 @@ fi
 
 chmod +x /usr/local/bin/gitlab-runner
 useradd --comment 'GitLab Runner' --create-home gitlab-runner --shell /bin/bash
+usermod -a -G docker gitlab-runner
 gitlab-runner install --user=gitlab-runner --working-directory=/home/gitlab-runner
 gitlab-runner start
 echo -e "$green install succeed! $none"
